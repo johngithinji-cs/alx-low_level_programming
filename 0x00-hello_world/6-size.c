@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - print the string in the print function
+* main - print the string in the put function
 *
 * Description: using the main function
-* this program prints the sizes of char, int, long int, long long int and float using sizeof function
+* this program prints "Programming is like building a multilingual puzzle
 * Return: 0
 */
 int main(void)
