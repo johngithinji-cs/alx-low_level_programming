@@ -19,7 +19,7 @@ int main(void)
 
 		if ((first_d < mid_d) && (mid_d < last_d))
 		{
-			putchar(fast_d);
+			putchar(first_d);
 			putchar(mid_d);
 			putchar(last_d);
 
