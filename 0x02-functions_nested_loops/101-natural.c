@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 
 /**
  * main - program that computes and prints the sum of all the multiples of 3 or
