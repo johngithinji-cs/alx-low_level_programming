@@ -19,7 +19,7 @@ void print_rev(char *s)
 	
 	for (c = 0; c <= total_characters - 1; c++)
 	{
-		_putchar(s[c]);
+		_putchar(s[total_characters - c]);
 	}
 	_putchar('\n');
 }
