@@ -17,7 +17,7 @@ void print_rev(char *s)
 	}
 	total_characters = i - 1;
 	
-	for (c = 0; c <= total_characters - 1; c++)
+	for (c = 0; c <= total_characters; c++)
 	{
 		_putchar(s[total_characters - c]);
 	}
