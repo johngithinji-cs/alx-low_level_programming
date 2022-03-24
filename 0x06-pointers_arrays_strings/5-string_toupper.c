@@ -7,17 +7,17 @@
  *
  * Return: A pointer to the changed string.
  */
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
 	int x = 0;
 
-	while (str[x])
+	while (*(s + x))
 	{
-		if (str[x] >= 'a' && str[x] <= 'z')
-			str[x] -= 32;
+		if (*(s + x) >= 'a' && *(s * x) <= 'z')
+			*(s + x) -= 'a' - 'A';
 
-		index++;
+		x++;
 	}
 
-	return (str);
+	return (s);
 }
