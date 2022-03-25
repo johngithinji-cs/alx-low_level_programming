@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- *_strlen - returns the length of a string
- *@str:a string of length to be returned
- *Return: returns the length of a string
+ *_strcat - concatinates two strings
+ *@dest:destination pointer
+ *@src:pointer to a string
+ *Return: concatinated string
  */
 char *_strcat(char *dest, char *src)
 {
