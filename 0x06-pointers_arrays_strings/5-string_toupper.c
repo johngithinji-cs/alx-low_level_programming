@@ -7,9 +7,10 @@
  *
  * Return: A pointer to the changed string.
  */
-char *string_toupper(char *s)
+char *string_toupper(char *)
 {
 	int x = 0;
+	char s;
 
 	while (*(s + x))
 	{
