@@ -1,32 +1,21 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * _strspn - returns number of bytes in the initial sengment s
- * @s: for the count action
- * @accept: parameter for char
- * Return: number of bytes;
+ * _strchr - returns a pointer to the first occurence of the
+ * character c in the string s
+ * @c: parameter for c to return
+ * @s: string to search character
+ * Return: pointer to first occurence of character c or null if not found
  */
-
-unsigned int _strspn(char *s, char *accept)
+char *_strchr(char *s, char c)
 {
-	unsigned int num;
-	int i, j, t;
-
-	i = 0;
-	while (s[i] != '\0')
+	while (*s != '\0')
 	{
-		t = 0;
-		for (j = 0; accept[j] != '\0'; j++)
-		{
-			if (s[i] == accept[j])
-				t = 1;
-		}
-		j = 0;
-		if (t == 0)
-			break;
-		num++;
-		i++;
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	return (i);
+	if (*s == c)
+		return (s);
+	else
+		return ('\0');
 }
