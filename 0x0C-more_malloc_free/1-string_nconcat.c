@@ -22,14 +22,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	for (index = 0; s1[index]; index++)
 		l++;
-	concatenation = malloc(sizeof(char) * (len + 1);
+	concatenation = malloc(sizeof(char) * (l + 1));
 	if (concatenation == NULL)
 		return (NULL);
 	l = 0;
 	for (index = 0; s1[index]; index++)
 		concatenation[l++] = s1[index];
-	for (index 0; s2[index]; index++)
+	for (index = 0; s2[index] && index < n; index++)
 		concatenation[l++] = s2[index];
+
 	concatenation[l] = '\0';
 	return (concatenation);
 }
