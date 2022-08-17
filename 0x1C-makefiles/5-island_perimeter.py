@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-Create a function def island_perimeter(grid): that returns the perimeter of the island described in grid:
+Module Island Perimeter
 """
+
+
 def island_perimeter(grid):
+    """ Calculate perimeter of grid where "1" is found"""
     p = 0
     for row in range(len(grid)):
         for col in range(len(grid[0])):
@@ -16,6 +19,3 @@ def island_perimeter(grid):
                 if col == (len(grid[0]) - 1) or grid[row][col + 1] == 0:
                     p += 1  # right
     return p
-
-
-
